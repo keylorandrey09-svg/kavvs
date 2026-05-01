@@ -467,6 +467,12 @@ nav{
 .exp-desc{font-size:.56rem;color:var(--muted2);margin-top:2px;display:block}
 .main-exp .exp-desc{color:rgba(9,9,9,.55)}
 </style>
+
+<!-- Vercel Speed Insights -->
+<script>
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 
@@ -738,7 +744,7 @@ nav{
 <script>
 /* ═══════════════════════════
    STATE
-═══════════════════════════ */
+══��════════════════════════ */
 const S = {
   phrase:'', firma:'',
   style:'dark', format:'post',
