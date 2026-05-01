@@ -469,6 +469,15 @@ nav{
 </style>
 </head>
 <body>
+    
+<div id="igBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#c4a35a;color:#090909;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:14px 20px;text-align:center">
+  Para descargar abre en Chrome o Safari →
+</div>
+<script>
+if(navigator.userAgent.includes('Instagram')||navigator.userAgent.includes('FBAN')||navigator.userAgent.includes('FBAV')){
+  document.getElementById('igBanner').style.display='block';
+}
+</script>
 
 <div id="cur"></div>
 <div id="curR"></div>
