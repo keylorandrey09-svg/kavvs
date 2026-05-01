@@ -469,7 +469,7 @@ nav{
 </style>
 </head>
 <body>
-    
+
 <div id="igBanner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#c4a35a;color:#090909;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:14px 20px;text-align:center">
   Para descargar abre en Chrome o Safari →
 </div>
@@ -733,6 +733,19 @@ if(navigator.userAgent.includes('Instagram')||navigator.userAgent.includes('FBAN
 </div><!-- /app -->
 
 <!-- STICKY EXPORT BAR (mobile) -->
+ <div style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:999">
+  <a id="openChrome" href="" style="display:none;background:#25d366;color:#fff;font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:13px 24px;white-space:nowrap">
+    Abrir en Chrome →
+  </a>
+</div>
+<script>
+if(navigator.userAgent.includes('Instagram')||navigator.userAgent.includes('FBAN')){
+  const btn=document.getElementById('openChrome');
+  btn.href='intent://kavvs.vercel.app#Intent;scheme=https;package=com.android.chrome;end';
+  btn.style.display='block';
+}
+</script>
+
 <div class="export-bar mobile-only">
   <button class="exp-main" onclick="exportImg('png')">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
